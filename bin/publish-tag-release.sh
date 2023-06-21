@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 SOURCE_DIRECTORY=$(pwd)
-SSH_SDK_DEPLOY_KEY=''
-GIT_USER_NAME=''
-GIT_USER_EMAIL=''
-DESTINATION_REPOSITORY_USERNAME=''
-DESTINATION_REPOSITORY_NAME=''
+SSH_SDK_DEPLOY_KEY=$(cat $HOME/.ssh/id_ed25519_mercadolibre)
+GIT_USER_NAME='luana-ogawa'
+GIT_USER_EMAIL='luana.ogawa@mercadolivre.com'
+DESTINATION_REPOSITORY_USERNAME='luana-ogawa'
+DESTINATION_REPOSITORY_NAME='fork-pp-php-sdk'
 
 apt-get install jq
 echo $(jq --version)
